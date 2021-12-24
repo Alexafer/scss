@@ -6,6 +6,7 @@
         <p class="catalog-item__price">Price: {{product_data.price}}</p>
         <button class="catalog-item__add_to_cart_btn btn" @click="this.$emit('sendArticle', this.product_data.article)">Add to cart</button>
     </div>
+    <div class="catalogItem"></div>
 </div>
     
 </template>
@@ -34,13 +35,14 @@ export default defineComponent ({
 })
 </script>
 <style lang="scss">
-@import "@/scss/styles.scss";
+// @import "@/scss/styles.scss";
   .catalogItem {
       border: 2px solid red;
       flex-basis: 25%;
       box-shadow: 0 0 8px 0 #e0e0e0;
-      padding: $paddinuu*2;
-      margin-bottom: $marginuu*2;
+    //   padding: $paddinuu*2px;
+    //   margin-bottom: $marginuu*2px;
+    //   background: $color;
       &__image {
           width: 100px;
       }
